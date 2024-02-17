@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sora">
+  <header>
+    <nav class="static bg-white flex items-center justify-between px-6 pt-6 pb-4 2xl:px-32">
+        <img width="73px" height="20px" src="./img/logo_rachi.png" alt="Logo Rachi">
+        <img class="object-contain 2xl:hidden" src="./img/menu.png" alt="Menu Hamburguer" id="menu">
+        
+        <!-- Adicionar hidden depois -->
+        <div id="lista" class="hidden absolute top-14 right-0 bg-white px-4 py-4 flex-col gap-8 text-sm text-preto-setenta font-medium 2xl:p-0 2xl:top-0 2xl:right-0 2xl:static 2xl:text-lg 2xl:flex 2xl:flex-row 2xl:gap-16">
+          <a href="#funcionalidades">Funcionalidade</a>
+          <a href="#app">Apps</a>
+          <a href="#planos">Planos</a>
+          <a href="#contato">Contato</a>
+        </div>
+    </nav>
+  </header>
+
+  <!-- Banner do Topo -->
+  <div class="bg-azul-fundo flex flex-col pt-10 pe-12 ps-6 gap-6 2xl:py-16 2xl:px-32 2xl:flex-row">
+    <div class="flex flex-col gap-4 2xl:gap-12 2xl:my-auto">
+      <h1 class="text-preto-cem font-semibold text-2xl 2xl:text-5xl">Rachi, <br>
+        é tudo que você <br>
+        precisa em um só lugar.</h1>
+      <button
+        class="font-inter botao bg-azul-principal text-white rounded-full px-4 py-2 me-auto font-semibold text-sm 2xl:text-xl 2xl:py-4 2xl:px-9 2xl:w-auto">Cadastre-se</button>
+    </div>
+    <img class="mx-auto imagem-topo" src="./img/img-01-mobile.svg" width="210px" height="183px">
+  </div>
+
+  <!-- Como funciona -->
+
+  <h2 class="text-preto-cem font-semibold text-2xl flex justify-center mt-10 mb-8 2xl:text-4xl 2xl:mt-14 2xl:mb-20" id="funcionalidades">Como
+    funciona</h2>
+
+  <div class="flex flex-col justify-center gap-8 mx-20 pb-10 2xl:flex-row 2xl:gap-32 2xl:px-64">
+    <div class="flex flex-col justify-center items-center">
+      <img class="mb-4 2xl:mb-7" src="./img/icon-01.png" height="60px" width="60px">
+      <h3 class="mb-1 text-base font-semibold text-preto-cem 2xl:mb-4 2xl:text-lg">Crie conexões</h3>
+      <p class="font-inter text-center text-sm text-preto-setenta font-normal 2xl:text-base">Lorem ipsum dolor sit amet, consecteteu.</p>
+    </div>
+
+    <div class="flex flex-col justify-center items-center">
+      <img class="mb-4 2xl:mb-7" src="./img/icon-02.svg" height="60px" width="60px">
+      <h3 class="mb-1 text-base font-semibold text-preto-cem 2xl:mb-4 2xl:text-lg">100% gratuito</h3>
+      <p class="font-inter text-center text-sm text-preto-setenta font-normal 2xl:text-base">Lorem ipsum dolor sit amet, consecteteu.</p>
+    </div>
+
+    <div class="flex flex-col justify-center items-center">
+      <img class="mb-4 2xl:mb-7" src="./img/icon-03.svg" height="60px" width="60px">
+      <h3 class="mb-1 text-base font-semibold text-preto-cem 2xl:mb-4 2xl:text-lg">Compartilhamento</h3>
+      <p class="font-inter text-center text-sm text-preto-setenta font-normal 2xl:text-base">Lorem ipsum dolor sit amet, consecteteu.</p>
+    </div>
+  </div>
+
+  <!-- Baixe o APP -->
+  <div class="bg-azul-fundo flex flex-row px-6 py-8 2xl:px-32 2xl:py-9 2xl:justify-start 2xl:items-center 2xl:gap-44" id="app">
+    <div class="flex flex-col">
+      <h2 class="text-preto-cem font-semibold text-center text-2xl flex mb-4 2xl:text-4xl 2xl:mb-6n 2xl:text-left">Baixe nosso app para desfrutar mais!</h2>
+      <p class="text-center text-preto-setenta font-normal text-sm mb-8 mx-5 2xl:text-base 2xl:text-left 2xl:mr-36 2xl:ml-0 2xl:mb-0">Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec.</p>
+      <p class="hidden text-center text-preto-setenta font-normal text-sm mb-8 2xl:text-base 2xl:text-left 2xl:flex">Varius volutpat hac adipiscing tincidunt pretium.</p>
+
+      <div class="w-full overflow-hidden flex gap-6">
+          <img class="2xl:h-full" src="./img/btnGooglePlay.png" alt="Baixar app no Google Play" height="60px" width="173px">
+          <img class="2xl:h-full" src="./img/btnAppStore.png" alt="Baixar app na AppStore" height="60px" width="173px">
+      </div>
+    </div>
+
+    <img class="hidden 2xl:block mx-auto" src="./img/img-app-desktop.png">
+  </div>
+
+  <!-- Planos -->
+  <div class="bg-white py-10 px-6 2xl:pt-12 2xl:pb-32 2xl:px-32" id="planos">
+
+    <h2 class="text-preto-cem font-semibold text-2xl flex justify-center mb-4 2xl:text-4xl">Nossos planos</h2>
+    <p class="font-inter text-center text-sm text-preto-setenta font-normal mb-10 2xl:mb-24 2xl:text-base 2xl:px-96 2xl:mx-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+
+    <div class="flex flex-col gap-8 2xl:flex-row 2xl:gap-7">
+
+      <div class="bg-azul-fundo text-center rounded-lg pt-6 pb-7 px-6 2xl:px-9 2xl:pt-14 2xl:pb-16 2xl:">
+        <h3 class="text-preto-cem font-semibold text-2xl mb-8 2xl:mb-12">Bronze</h3>
+        <div class="flex justify-center mb-10 2xl:mb-12">
+          <p class="text-preto-cem font-semibold text-xl">R$</p>
+          <p class="text-preto-cem font-semibold text-5xl">28</p>
+          <p class="text-preto-cem font-semibold text-2xl self-end">/mês</p>
+        </div>
+        <p class="pb-12 text-preto-setenta font-inter font-normal text-base 2xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+        <button class="botao rounded-full bg-azul-principal text-white font-inter font-semibold text-base py-2 w-5/6 2xl:text-xl">Assinar</button>
+      </div>
+
+      <div class="bg-preto-cem text-center rounded-lg px-6 pt-6 pb-7 2xl:px-9 2xl:pt-8 2xl:pb-16">
+        <h3 class="text-white font-semibold text-2xl mb-6 2xl:mb-3 2xl:text-3xl">Prata</h3>
+        <button class="rounded-full bg-azul-principal text-white text-sm tracking-widest w-4/5 py-1 mb-6 2xl:mb-9">PREFERIDO</button>
+        <div class="flex justify-center mb-10 2xl:mb-12">
+          <p class="text-white font-semibold text-xl">R$</p>
+          <p class="text-white font-semibold text-5xl">57</p>
+          <p class="text-white font-semibold text-2xl self-end">/mês</p>
+        </div>
+        <p class="pb-12 text-preto-quarenta font-inter font-normal text-base 2xl:pb-14 2xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+        <button class="w-5/6 botao rounded-full bg-azul-principal text-white font-inter font-semibold text-base py-2 2xl:text-xl ">Assinar</button>
+      </div>
+
+      <div class="bg-azul-fundo text-center rounded-lg pt-6 pb-7 px-6 2xl:px-9 2xl:pt-14 2xl:pb-16">
+        <h3 class="text-preto-cem font-semibold text-2xl mb-8 2xl:mb-12">Ouro</h3>
+        <div class="flex justify-center mb-10 2xl:mb-12">
+          <p class="text-preto-cem font-semibold text-xl">R$</p>
+          <p class="text-preto-cem font-semibold text-5xl">94</p>
+          <p class="text-preto-cem font-semibold text-2xl self-end">/mês</p>
+        </div>
+        <p class="pb-12 text-preto-setenta font-inter font-normal text-base 2xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+        <button class="w-5/6 botao rounded-full bg-azul-principal text-white font-inter font-semibold text-base py-2 2xl:text-xl">Assinar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Contato -->
+  <div class="bg-auto bg-bottom bg-no-repeat px-6 py-7 flex flex-col justify-center items-center 2xl:h-96 2xl:bg-cover" id="contato" style="background-image: url(./img/fundo-contato-desktop.png)">
+
+    <h3 class="text-white font-semibold text-2xl flex justify-center mb-4 2xl:text-4xl">Contato</h3>
+    <p class="text-preto-quarenta font-inter text-center text-sm font-normal mb-5 2xl:text-base 2xl:mx-96 2xl:px-32 2xl:mb-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+    
+    <div class="w-full flex flex-col 2xl:flex-row 2xl:gap-10 2xl:justify-center">
+      <input type="email" class="bg-transparent border-b-2 border-b-white mb-9 h-12 text-white placeholder:text-base placeholder:text-white 2xl:w-72 2xl:mb-0" placeholder="Seu melhor e-mail">
+      <button class="botao rounded-full bg-azul-principal text-white font-inter font-bold text-base py-2 2xl:text-lg 2xl:font-medium 2xl:px-8 2xl:w-auto">Enviar</button>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p class="my-9 bg-white text-preto-cem text-center text-sm 2xl:text-xl">Rachi - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
